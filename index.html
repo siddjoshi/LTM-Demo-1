@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="game">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="scoreboard" aria-label="Scoreboard">
+            <div class="score score-x">
+                <span class="score-label">Player X</span>
+                <span class="score-value" id="score-x">0</span>
+            </div>
+            <div class="score score-draw">
+                <span class="score-label">Draws</span>
+                <span class="score-value" id="score-draw">0</span>
+            </div>
+            <div class="score score-o">
+                <span class="score-label">Player O</span>
+                <span class="score-value" id="score-o">0</span>
+            </div>
+        </div>
+
+        <p class="status" id="status" aria-live="polite">Player X's turn</p>
+
+        <div class="board" id="board" role="grid" aria-label="Tic Tac Toe board">
+            <button class="cell" data-index="0" role="gridcell" aria-label="Cell 1"></button>
+            <button class="cell" data-index="1" role="gridcell" aria-label="Cell 2"></button>
+            <button class="cell" data-index="2" role="gridcell" aria-label="Cell 3"></button>
+            <button class="cell" data-index="3" role="gridcell" aria-label="Cell 4"></button>
+            <button class="cell" data-index="4" role="gridcell" aria-label="Cell 5"></button>
+            <button class="cell" data-index="5" role="gridcell" aria-label="Cell 6"></button>
+            <button class="cell" data-index="6" role="gridcell" aria-label="Cell 7"></button>
+            <button class="cell" data-index="7" role="gridcell" aria-label="Cell 8"></button>
+            <button class="cell" data-index="8" role="gridcell" aria-label="Cell 9"></button>
+        </div>
+
+        <div class="controls">
+            <button id="reset" class="btn">New Round</button>
+            <button id="reset-all" class="btn btn-secondary">Reset Scores</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
